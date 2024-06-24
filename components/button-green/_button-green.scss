@@ -1,0 +1,11 @@
+.button-green {
+    display: inline-block;
+    color: $black;
+    background-color: $green;
+    padding: 15px 45px;
+    font-size: 24px;
+    font-family: "Noto Sans";
+    font-weight: normal;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px rgba($color: $black, $alpha: 0.25);
+}

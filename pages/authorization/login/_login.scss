@@ -1,0 +1,105 @@
+.login {
+    background-color: $ashen;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    height: 100vh;
+    padding: 40px 80px;
+}
+
+.login__column {
+    border-radius: 40px;
+    overflow: hidden;
+    max-height: inherit;
+    box-shadow: 2px 2px 20px rgba($color: $black, $alpha: 0.4);
+}
+
+.login__img {
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.login__body {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.form-login {
+    min-width: 300px;
+}
+
+.form-login__title {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.form-login__field {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.form-login__field_input {
+    width: 100%;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    border: 1px solid $black;
+    padding: 7px 15px;
+    color: $black;
+    border-radius: 7px;
+
+    &::placeholder {
+        color: $grey;
+    }
+}
+
+.form-login__send {
+    text-align: center;
+}
+
+.form-login__send_btn {}
+
+.button-green {}
+
+.form-login__line {
+    display: flex;  
+    align-items: center;
+
+}
+
+.form-login__line_text {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    color: $ashen;
+    padding: 0 25px;
+    margin: 10px 0;
+}
+
+.form-login__line_span {
+    flex: 1 1 auto;
+    display: block;
+    height: 1px;
+    border-radius: 5px;
+    background-color: $ashen;
+}
+
+.form-login__link {}
+
+.form-login__link_login {
+    display: block;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    color: $black;
+
+    span {
+        color: $blue;
+    }
+}

@@ -1,0 +1,48 @@
+.add-category {
+    flex: 0 1 400px;
+}
+
+.add-category__title {
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.add-category__field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 10px;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.add-category__field_label {
+    font-size: 24px;
+    color: $black;
+}
+
+.add-category__field_input {
+    flex: 1 1 auto;
+    font-size: 24px;
+    color: $black;
+    padding: 5px 5px 5px 10px;
+    border: 1px solid $black;
+    border-radius: 10px;
+}
+
+.category-color_input {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.task-form {
+    position: relative;
+}
+
+.task-form__close {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+.task-form__info {
+    margin-bottom: 30px;
+}
+
+.task-form__field {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.task-form__field_icon {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.task-form__field_input {
+    width: 100%;
+    font-family: 'Noto Sans';
+    font-size: 34px;
+    color: $grey;
+    flex: 1 1 auto;
+    padding: 3px;
+    border-bottom: 1px solid $black;
+}
+
+.task-form__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-action-btn {
+    text-align: center;
+    font-family: "Noto sans";
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 19px;
+}
+
+.task-form__actions_close {
+    color: $white;
+    background-color: $grey;
+}
+
+.task-form__actions_confirm {
+    color: $black;
+    background-color: $green;
+}

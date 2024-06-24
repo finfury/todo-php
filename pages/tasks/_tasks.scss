@@ -1,0 +1,179 @@
+@import '../../styles/_assets.scss';
+
+.tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.event-wrapper {
+    flex: 1 1 auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.event {
+    flex: 1 1 auto;
+    border: 1px solid $grey;
+    border-radius: 30px;
+    padding: 20px 25px 40px 25px;
+
+    &:not(:last-child) { 
+        margin-bottom: 20px;
+    }
+}
+
+.event__header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.event__header_title {
+    flex: 1 1 auto;
+
+    font-size: 36px;
+    font-family: 'Oswald';
+    font-weight: 600;
+}
+
+.event__header_button {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    border: 1px solid $grey;
+    border-radius: 15px;
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.event__header_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    fill: $blue;
+}
+
+.event__list {}
+
+.event__item {
+    display: flex;
+    align-items: center;
+
+    padding: 7px 5px 12px 7px;
+    border-bottom: 2px solid $grey;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.event__item_category {
+    width: 40px;
+    height: 35px;
+    min-width: 40px;
+}
+
+.event__item_icon {
+    margin-right: 12px;
+}
+
+.event__item_title {
+    flex: 1 1 auto;
+
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    color: $grey;
+}
+
+.event__item_check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+
+    padding: 2px 1px 2px 2px;
+    border: 3px solid $black;
+    border-radius: 4px;
+    fill: $green;
+    transition: border-color 0.5s ease;
+
+    svg {
+        transform: scale(0);
+        transition: transform 0.3s ease;
+    }
+
+    &.done {
+        border: 3px solid $green;
+
+        svg {
+            transform: scale(1);
+        }
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    } 
+}
+
+.event__footer {
+    text-align: center;
+    font-family: "Sassy Frass", cursive;
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
